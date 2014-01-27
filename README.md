@@ -1,7 +1,7 @@
 seeping
 =======
 
-Simple project for visualizing ping results over time. Let's you "see" ping. Get it?
+Simple project for visualizing ping results over time. Lets you "see" ping. Get it?
 
 Using
 -----
@@ -9,7 +9,7 @@ Compile and run the script like so:
 
     ./run.sh ip_address
 
-Also, you can symlink to the script and use it that way.
+Also, you can symlink to the script and use it that way:
 
     ln -s $(pwd)/run.sh ~/bin/seeping
 
@@ -39,6 +39,6 @@ The columns are as follows:
 * The time.
 * The outcome of each ping. "#" is success and "." is failure.
 * A scaled histogram. Individual ping detail is only provided for 50-60. < 50 is grouped by tens.
-* The total of successful pings.
+* The total successful pings (out of 60).
 
 If the day rolls over midnight, the new date is output on a single line.
